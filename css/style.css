@@ -213,12 +213,12 @@ img {
         height: 120px;
         padding: 20px;
     }
-    /* .hero.programs .content {
+    .hero.programs .content {
         display: none;
     }
     .hero.support .content {
         display: none;
-    } */
+    }
 
     .navbar a {
         padding: 10px 10px;
