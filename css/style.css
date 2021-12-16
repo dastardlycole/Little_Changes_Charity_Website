@@ -214,6 +214,11 @@ img {
         height: 120px;
         padding: 20px;
     }
+    .btn-big {
+        flex: 100%;
+        max-width: 100%;
+        
+    }
     .hero.programs .content {
         display: none;
     }
