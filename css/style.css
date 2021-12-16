@@ -225,12 +225,12 @@ img {
         max-width: 100%;
         
     }
-    /* .hero.programs .content {
+    .hero.programs .content {
         display: none;
     }
     .hero.support .content {
         display: none;
-    } */
+    }
 
     frame {
         max-width: calc(100vw + 40px);
