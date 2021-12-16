@@ -209,7 +209,7 @@ img {
 
 /* Mobile */
 @media(max-width: 768px) {
-    .navbar.top {
+    .navbar {
         flex-direction: column;
         height: 120px;
         padding: 20px;
