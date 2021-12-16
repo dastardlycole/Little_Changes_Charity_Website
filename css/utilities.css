@@ -46,7 +46,7 @@ button {
     color: #fff;
 }
 
-.btn-dark, .bg-dark {
+.btn-dark, .bg-dark, .bg-dark a {
     background: #333;
     color: #fff;
 }
