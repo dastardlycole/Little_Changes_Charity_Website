@@ -214,17 +214,23 @@ img {
         height: 120px;
         padding: 20px;
     }
+
+    .navbar a {
+        padding: 10px 10px;
+        margin: 0 3px;
+    }
+
     .btn-big {
         flex: 100%;
         max-width: 100%;
         
     }
-    .hero.programs .content {
+    /* .hero.programs .content {
         display: none;
     }
     .hero.support .content {
         display: none;
-    }
+    } */
 
     frame {
         max-width: calc(100vw + 40px);
@@ -235,10 +241,7 @@ img {
         margin: 0 -15px;}
         /* you might not the margin property on the wrapper (or you might need to change it to suit your needs); in my case it's used to align the wrapper with the edge of the screen as my site has 15px padding, which isn't needed here because the form already has it's own padding */
 
-    .navbar a {
-        padding: 10px 10px;
-        margin: 0 3px;
-    }
+    
 
     .flex-items {
         flex-direction: column;
