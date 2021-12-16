@@ -237,7 +237,7 @@ img {
 
     frame {
         max-width: calc(100vw + 40px);
-        margin: -1px -25px;}
+        margin: -11px -2px;}
         .iframe-wrapper {
         width:100vw;
         overflow: hidden;
