@@ -213,11 +213,11 @@ img {
         
         flex-direction: column;
         height: 120px;
-        padding: 1px;
+        padding: 20px;
     }
 
     .navbar a {
-        padding: 10px 1px;
+        padding: 1px 1px;
         margin: 0 3px;
     }
 
