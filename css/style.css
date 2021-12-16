@@ -210,13 +210,14 @@ img {
 /* Mobile */
 @media(max-width: 768px) {
     .navbar {
-        text-align: center;
+        
         flex-direction: column;
         height: 120px;
         padding: 20px;
     }
 
     .navbar a {
+        text-align: center;
         padding: 10px 1px;
         margin: 0 3px;
     }
