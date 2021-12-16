@@ -216,8 +216,12 @@ img {
         padding: 20px;
     }
 
+    .navbar ul {
+        font-size: 17px;
+    }
+
     .navbar a {
-        padding: 1px 1px;
+        padding: 10px 1px;
         margin: 0 3px;
     }
 
