@@ -212,7 +212,7 @@ img {
     .navbar {
         flex-direction: column;
         height: 120px;
-        padding: 10px;
+        padding: 20px;
     }
 
     .navbar a {
