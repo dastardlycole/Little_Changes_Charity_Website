@@ -226,9 +226,7 @@ img {
     }
 
     .btn-big {
-        flex: 100%;
-        max-width: 100%;
-        
+        padding: 10px 30px;
     }
     .hero.programs .content {
         display: none;
