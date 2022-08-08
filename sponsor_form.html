@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Little Changes Charity | Programs</title>
+</head>
+<body id="Home">
+    <header class="hero programs">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+                <a href="index.html"><span class="text-primary"><i class="fas fa-book-open"></i> Little</span>Changes </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="sponsor.html">Sponsor A Child</a></li>
+                    <li><a href="#contact">Newsletter/Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Our Programs</h1>
+        </div>
+    </header>
+    <main>
+        <article class="flex-columns">
+            <div class="row">
+                <div class="column">
+                    <div class="column-1">
+                        <img src="images/home/teaching.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-2 bg-light">
+                        <form name="sponsor_info" method="POST" data-netlify="true">
+                            <p>
+                              <label>First Name: <input type="text" name="first_name" /></label>
+                            </p>
+                            <p>
+                              <label>Last Name: <input type="text" name="last_name" /></label>
+                            </p>
+                            <p>
+                              <label>Email: <input type="email" name="email" /></label>
+                            </p>
+                            <p>
+                                <label>Phone Number: <input type="text" name="phone" /></label>
+                              </p>
+                            <p>
+                              <label>Age: <input type="number" min="1" max="120" name="age" /></label>
+                            </p>
+                            <p>
+                              <label>Occupation: <input type="text" name="occupation" /></label>
+                            </p>
+                            <p>
+                              <label>Select who you would like to sponsor:</label>
+                              <select name="children" id="children">
+                                <option value="Kadija">Kadija</option>
+                                <option value="Bolu">Bolu</option>
+                                <option value="Wisdom">Wisdom</option>
+                                <option value="Ebube">Ebube</option>
+                                <option value="Aisha">Aisha</option>
+                              </select>
+                            </p>
+                            <label for="how_sponsor">How would you like to sponsor him/her:</label><br>
+
+                            <textarea id="how_sponsor" name="how_sponsor" rows="5" cols="33"></textarea>
+
+                            
+                            <p>
+                              <button type="submit">Submit</button>
+                            </p>
+                          </form>
+                          
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        
+
+    <!-- Mailing Section -->
+    <section id="mailing" class="mailing flex-columns">
+        <div class="row">
+            <div class="column">
+                <div class="column-1">
+                    <img src="images/home/sub_newsletter.png" alt="">
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="column-2 bg-light">
+                    <h2>Subscribe to our newsletter</h2>
+                    <form name="newsletter" class="callback-form" method="POST" data-netlify="true">
+                        <!-- <div class="form-control">
+                            <label for="name"></label>
+                            <input type="text" name="name" id="name" placeholder="Enter name">
+                        </div> -->
+                        <div class="form-control">
+                            <label for="email">
+                                <input type="email" name="email" placeholder="Enter email">
+                            </label>
+                            
+                        </div>
+                        <!-- <div class="form-control">
+                            <label for="phone"></label>
+                            <input type="text" name="phone" id="phone" placeholder="Enter phone number">
+                        </div> -->
+                        <button type="submit"> Send </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Footer contact -->
+<footer id="contact" class="footer bg-dark">
+    <div class="social">
+        <a href="https://www.twitter.com/littlechangesfd/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://www.instagram.com/littlechangescharity/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://github.com/dastardlycole/Little_Changes_Charity_Website" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        <a href="mailto:Littlechangescharity@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
+        
+    </div>
+    <p>+2345027364829</p>
+    <p>Copyright &copy; 2021 - LittleChanges</p>
+    </footer>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+<script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false
+
+    window.onscroll = function() {
+        if(window.pageYOffset > 100) {
+            navbar.classList.remove('top');
+            if (!scrolled) {
+                navbar.style.transform = 'translateY(-70px)';
+            }
+            setTimeout(function() {
+                navbar.style.transform = 'translateY(0)';
+                scrolled = true;
+            }, 200); 
+        } else {
+            navbar.classList.add('top')
+            scrolled = false
+        }
+    }
+
+    $('#navbar a, .btn').on('click', function (e) {
+        if (this.hash != '') {
+            e.preventDefault();
+
+            const hash = this.hash;
+
+            $('html, body').animate(
+                {
+                    scrollTop: $(hash).offset().top - 100,
+                },
+                800
+            );
+        }
+    });
+
+ </script>
+</body>
+</html>
+
+
+
+
+
+
