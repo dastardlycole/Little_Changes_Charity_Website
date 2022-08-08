@@ -42,13 +42,13 @@
                     <div class="column-2 bg-light">
                         <form name="sponsor_info" method="POST" data-netlify="true" action="/form_success.html">
                             <p>
-                              <label>First Name: <input type="text" name="first_name" /></label>
+                              <label>First Name: <input type="text" name="first_name" required /></label>
                             </p>
                             <p>
-                              <label>Last Name: <input type="text" name="last_name" /></label>
+                              <label>Last Name: <input type="text" name="last_name" required/></label>
                             </p>
                             <p>
-                              <label>Email: <input type="email" name="email" /></label>
+                              <label>Email: <input type="email" name="email" required/></label>
                             </p>
                             <p>
                                 <label>Phone Number: <input type="text" name="phone" /></label>
@@ -57,7 +57,7 @@
                               <label>Age: <input type="number" min="1" max="120" name="age" /></label>
                             </p>
                             <p>
-                              <label>Occupation: <input type="text" name="occupation" /></label>
+                              <label>Occupation: <input type="text" name="occupation" required/></label>
                             </p>
                             <p>
                               <label>Select who you would like to sponsor:</label>
